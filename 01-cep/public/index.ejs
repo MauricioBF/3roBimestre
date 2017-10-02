@@ -1,0 +1,41 @@
+
+<form class="form-inline">
+    <div class="form-group">
+        <label for="cep">CEP: </label>
+        <input type="text" value="00000000" class="input" data-ls-module="charCounter" maxlength="8"
+            autofocus class="form-control" 
+            id="cep" name="cep">
+         <button type="button" id="but" class="btn btn-default">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+    <button type="submit" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span>
+    </button>
+    <div class="trem alert alert-danger alert-dismissible" id="trem" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Erro!</strong> O CEP digitado não foi encontrado ou não existe.
+      </div>
+</form>
+
+<div id="resultado"></div>
+<script id="template" type="text/x-handlebars-template">
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>CEP</td>
+                <td>{{cep}}</td>
+            </tr>
+            <tr>
+                <td>Logradouro</td>
+                <td>{{logradouro}}</td>
+            </tr>
+            <tr>
+                <td>Localidade</td>
+                <td>{{localidade}}</td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+
+<script src="js/index.js"></script>
