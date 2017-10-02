@@ -1,0 +1,5 @@
+   AV#1: 3 pts
+   AV#2: 1 pts melhorias busca cep
+   AV#3: 2 pts dicionário
+PROJETO: 3 pts espeficicação, sketch, tarefas no trello, protótipo
+QUALITA: 1 pts
